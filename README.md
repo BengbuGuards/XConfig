@@ -6,7 +6,7 @@ A plugin that brings improvements and fixes to GTA Trilogy Mobile.
 
 ## 支持版本
 
-其中，NF代表网飞版，R*代表R星版（这两个版本在游戏内容上毫无区别）；对勾“√”代表支持，对勾加星号“\*”代表部分支持，问号“?”表示理论可行但无对应mod安装包，叉号“×”代表不支持，横杠“—”代表不存在这个版本。
+仅支持安卓版。版本情况见下表。其中，NF代表网飞版，R*代表R星版（这两个版本在游戏内容上毫无区别）；对勾“√”代表支持，对勾加星号“\*”代表部分支持，问号“?”表示理论可行但无对应mod安装包，叉号“×”代表不支持，横杠“—”代表不存在这个版本。
 
 | **游戏** | **III** |  | **VC** |  | **SA** |  |
 |---|---|---|---|---|---|---|
@@ -15,6 +15,11 @@ A plugin that brings improvements and fixes to GTA Trilogy Mobile.
 | **1.83** | ? | √ | ? | √ | — | — |
 | **1.86** | — | — | — | — | ? | √ |
 | **1.90** | × | — | × | — | — | — |
+| **1.84** | — | × | — | — | — | — |
+
+## 安装
+
+确保游戏支持AML（内置libAML.so且在游戏主Activity中加载），将本插件so文件放置到“/storage/emulated/0/Android/data/[包名]/mods/”中或MT存储文件提供器的android_data文件夹中。
 
 ## 功能
 
@@ -46,7 +51,7 @@ A plugin that brings improvements and fixes to GTA Trilogy Mobile.
 
 - TimeTraveler：**[SA]** 时间前进4小时。
 - SecretSpySet：**[SA]** 武器包4，包含火神机枪、Vibrator、夜视镜和热成像夜视镜。后两者交替出现。
-- FreezeIt：**[SA]** 锁定时间。游戏的阴影可能会出现问题。
+- FreezeIt：**[SA]** 锁定时间。游戏的阴影渲染可能会出现问题。
 - TrueGod：**[SA]** 无敌，玩家不会受到任何伤害，包括没开降落伞着地，车辆也是无敌，但强制使其爆炸仍会杀死玩家；开启后警察不可能逮捕玩家。**[VC]** 免疫除溺水的伤害外的所有伤害。车辆也是无敌，但爆炸仍会杀死玩家。
 - NoPity：**[SA]** 跳过（直接完成）当前任务，极少数任务不可跳过，和十周年手机版一样。
 - Teleport：**[SA|特色]** 传送到地图导航点位置。**注意：** 若标点较远，则需很长时间加载，甚至让玩家卡进地图中，此时需要在附近标点，再次传送。
@@ -69,7 +74,7 @@ A plugin that brings improvements and fixes to GTA Trilogy Mobile.
 - **[SA]** `SprintOnAnySurface`：在绝大多数室内空间可以冲刺。即原版和十周年的插件“Sprint Everywhere”。
 - **[SA|未测试]** `FixWrongCarCol`：修正carcols.dat中颜色#98（大烟哥蓝色汽车所用颜色）。
 - **[VC|部分可用]** `AbleToSkipTelephoneCall`：接听电话时可以按电话按钮挂断电话。功能bug：一旦挂电话之后，后续来电接听将会自动挂断
-- **[VC|未测试]** `AllowAutoAimingOnMG`：启用火神机枪的自动瞄准功能。功能bug：不可用
-- **[VC|未测试]** `FixLeafLinksBridgesTraffic`：修复高尔夫球场旁边那个大桥没有车流的bug。功能bug：不可用
+- **[VC|不可用]** `AllowAutoAimingOnMG`：启用火神机枪的自动瞄准功能。功能bug：不可用，请关闭
+- **[VC]** `FixLeafLinksBridgesTraffic`：修复高尔夫球场旁边那个大桥没有车流的bug。在1.83版上测试通过，1.72可用性未知，理论可行。
 - **[III]** `MafiaDontUseShotgun`：家族黑手党在游戏中后期使用AK47而不是霰弹枪，以降低难度。不影响任务“浓缩咖啡外卖！Espresso-2-Go!”与“血脉喷张Big'N'Veiny”。
 - **[III]** `FixFBICarColor`：修复FBI汽车追击型颜色为纯黑的遗留问题。
