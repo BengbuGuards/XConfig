@@ -16,6 +16,7 @@ A plugin that brings improvements and fixes to GTA Trilogy Mobile.
 | **1.86** | — | — | — | — | ? | √ |
 | **1.90** | × | — | × | — | — | — |
 | **1.84** | — | × | — | — | — | — |
+| **1.84.5** | — | — | — | × | — | — |
 
 ## 安装
 
